@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-var mongoDB = "mongodb+srv://cmarciao:Reymysterio123@cluster0.cjlv6ba.mongodb.net/?retryWrites=true&w=majority";
+var mongoDB = process.env.MONGO_DB_KEY;
 mongoose.connect(mongoDB);
 
 var db = mongoose.connection;
