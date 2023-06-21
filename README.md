@@ -33,6 +33,11 @@
 
 
 ## 🚀 Como executar o projeto
+1. Este projeto usa o PostgresSQL como Banco de Dados, então você precisa configurar o seu banco:
+   1. No arquivo src/database/index.ts é onde é feita a configuração do PostgresSQL.
+   2. Você pode mudar as configurações de acordo com a sua necessidade.
+   3. Ou você pode subir um ambiente Docker na porta 5432, e rodar os camandos SQLs que estão dentro de src/database/schema.sql
+
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
